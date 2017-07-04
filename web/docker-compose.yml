@@ -1,0 +1,11 @@
+version: '2'
+services:
+  env:
+    build: ./env
+    image: my_ubuntu 
+    ports:
+      - "9999:9999"
+    volumes:
+      - /opt/per:/opt/per
+    extra_hosts:
+      - "local:0"
